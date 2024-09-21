@@ -4,7 +4,6 @@ import { Game } from "../types/GameData";
 import {
   BsSortAlphaDown,
   BsSortAlphaDownAlt,
-  BsSortAlphaUp,
   BsSortNumericDown,
   BsSortNumericDownAlt,
 } from "react-icons/bs";
