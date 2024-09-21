@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import useGameStore from '../Zustand/store'; 
 import { Game } from '../types/GameData';
 
@@ -67,7 +67,6 @@ const GameTable = () => {
         <table className="min-w-full border-collapse border border-gray-800">
           <thead>
             <tr>
-              <th onClick={() => handleSort('id')} className="border px-4 py-2 cursor-pointer">ID</th>
               <th onClick={() => handleSort('name')} className="border px-4 py-2 cursor-pointer">Name</th>
               <th onClick={() => handleSort('releaseYear')} className="border px-4 py-2 cursor-pointer">Release Year</th>
               <th onClick={() => handleSort('players')} className="border px-4 py-2 cursor-pointer">Players</th>
