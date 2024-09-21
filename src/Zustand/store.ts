@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { create } from 'zustand';
-import { Game } from '../types/GameData'; // Импортируйте интерфейс Game
+import { Game } from '../types/GameData'; 
 
+axios.defaults.baseURL = 'https://getboardgames-jxxjux7fua-ey.a.run.app/';
 
 interface GameState {
   games: Game[];

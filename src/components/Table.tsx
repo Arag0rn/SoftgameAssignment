@@ -149,7 +149,6 @@ const GameTable = () => {
     >
       <span className="px-4 py-2 h-[50px] flex justify-between items-center w-[100%] rounded-[8px] border-[1px] border-gray-300">
         {game.name || "no data"}
-        {/* Render a random emoji icon */}
         <div className="ml-2">
           {emojiIcons[Math.floor(Math.random() * emojiIcons.length)]}
         </div>
