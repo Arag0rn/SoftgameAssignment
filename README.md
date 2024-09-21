@@ -36,8 +36,9 @@ This project is a **Game List Table** implemented in **React** and styled with *
 - **React**: Core library for building the user interface.
 - **TailwindCSS**: Utility-first CSS framework for styling.
 - **React Icons**: For emoji icons and sorting indicators.
-- **JavaScript/JSX**: Language for implementing React components.
+- **TypeScript/TSX**: Language for implementing React components.
 - **Node.js** & **npm**: Used for package management and running the project.
+- **Vite**: Used for fast development server and build tool.
 
 ---
 
@@ -57,35 +58,28 @@ This project is a **Game List Table** implemented in **React** and styled with *
 ├── public
 ├── package.json
 └── README.md
+```
 
-src/components: Contains all the main components used in the application.
-assets: Contains static assets such as images.
-utils: Utility functions used across the application.
-index.js: Entry point of the React application.
-Features
-Table View
+---
+
+## Features
+
+- **Table View**
 The app displays a list of games in a tabular format using an unordered list (ul) to mimic rows and columns. Each game has several attributes displayed:
 
-Name
-Release Year
-Players (min - max)
-Publisher
-Type
-Sorting
-Users can click on the column headers to sort the games by different attributes:
+*Name*
+*Release Year*
+*Players (min - max)*
+*Publisher*
+*Type*
+*Sorting*
 
-Name
-Release Year
-Players
-Publisher
-Type
-The sorting is handled dynamically, and the sorted column is visually indicated using icons (<BsSortAlphaDown />, <BsSortAlphaDownAlt />, <BsSortNumericDown />, etc.).
 
-Filtering
+Users can click on the column headers to sort the games by different attributes
+
+
+- **Filtering**
 Users can type in a filter input field, and the table will display only games whose name or publisher matches the search input. Filtering is case-insensitive and only triggers after the user has entered more than two characters.
-
-Responsive Design
-The table layout adapts to different screen sizes using TailwindCSS classes, ensuring it is usable on both mobile and desktop devices.
 
 Dynamic Emoji Icons
 Each game can display one of the following emoji icons:
@@ -96,31 +90,40 @@ Each game can display one of the following emoji icons:
 <BsEmojiWink />
 The icons are either chosen randomly or based on specific game properties.
 
-How to Run the Project
-Prerequisites
-Ensure that you have the following installed on your system:
 
-Node.js (v14 or higher)
-npm (v6 or higher)
-Installation
+## How to Run the Project
+
+### Prerequisites
+Ensure that you have the following installed on your system:
+- **Node.js** (v14 or higher)
+- **npm** (v6 or higher)
+
+### Installation
 Clone the repository:
 
-bash
-Copy code
+```bash
 git clone https://github.com/your-repo/game-list-table.git
 cd game-list-table
 Install dependencies:
+```
 
-bash
+```bash
 Copy code
 npm install
 Running the App
 Start the development server:
+```
 
-bash
+```bash
 Copy code
 npm start
 Open the app in the browser: Navigate to http://localhost:3000 to see the app running.
+```
+
+
+
+
+
 
 Components Overview
 App.js
